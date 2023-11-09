@@ -30,10 +30,6 @@
                                     <td>{{$slider->id}}</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">{{ __('sliders.attributes.application') }}</th>
-                                    <td> <span class="badge {{$slider->application->color()}}">{{$slider->application->trans()}}</span> </td>
-                                </tr>
-                                <tr>
                                     <th scope="row">{{ __('sliders.attributes.title') }}</th>
                                     <td>{{$slider->getTranslation('title', app()->getLocale())}}</td>
                                 </tr>

@@ -40,7 +40,6 @@
                             <thead>
                                 <tr>
                                     <th class="wd-15p border-bottom-0">{{ __('sliders.attributes.id') }}</th>
-                                    <th class="wd-15p border-bottom-0">{{ __('sliders.attributes.application') }}</th>
                                     <th class="wd-15p border-bottom-0">{{ __('sliders.attributes.title') }}</th>
                                     <th class="wd-15p border-bottom-0">{{ __('sliders.attributes.status') }}</th>
                                     <th class="wd-15p border-bottom-0">{{ __('sliders.attributes.created_at') }}</th>
@@ -51,9 +50,6 @@
                                 @foreach($sliders as $slider)
                                     <tr>
                                         <td>{{$slider->id}}</td>
-                                        <td>
-                                            <span class="badge {{$slider->application->color()}}">{{$slider->application->trans()}}</span>
-                                        </td>
                                         <td>{{$slider->getTranslation('title', app()->getLocale())}}</td>
                                         <td>
                                             <span class="badge {{$slider->status->color()}}">{{$slider->status->trans()}}</span>

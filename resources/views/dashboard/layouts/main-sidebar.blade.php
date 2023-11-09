@@ -11,7 +11,7 @@
 				<div class="app-sidebar__user clearfix">
 					<div class="dropdown user-pro-body">
 						<div class="">
-							<img alt="user-img" class="avatar avatar-xl brround" src="{{Auth::user()!=null && Auth::user()->image!=null ? url(Auth::user()->image) : create_avater(Auth::user()->name)}}"><span class="avatar-status profile-status bg-green"></span>
+							<img alt="user-img" class="avatar avatar-xl brround" src="{{Auth::user()->getAvatar()}}"><span class="avatar-status profile-status bg-green"></span>
 						</div>
 						<div class="user-info">
 							<h4 class="font-weight-semibold mt-3 mb-0">{{Auth::user()->name}}</h4>
@@ -26,26 +26,9 @@
 
 					<li class="side-item side-item-category">{{ __('dashboard.users') }}</li>
 					@include('dashboard.users.partials.actions.sidebar')
-					@include('dashboard.clients.partials.actions.sidebar')
-
-					<li class="side-item side-item-category">{{ __('client_cars.plural') }}</li>
-					@include('dashboard.car_brands.partials.actions.sidebar')
-					@include('dashboard.car_models.partials.actions.sidebar')
-					@include('dashboard.client_cars.partials.actions.sidebar')
-
-					<li class="side-item side-item-category">{{ __('packages.plural') }}</li>
-					@include('dashboard.packages.partials.actions.sidebar')
-
-					<li class="side-item side-item-category">{{ __('report_accidents.plural') }}</li>
-					@include('dashboard.report_accidents.partials.actions.sidebar')
 
 					<li class="side-item side-item-category">{{ __('dashboard.application') }}</li>
-					@include('dashboard.banks.partials.actions.sidebar')
-					@include('dashboard.bank_accounts.partials.actions.sidebar')
-					@include('dashboard.cities.partials.actions.sidebar')
-					@include('dashboard.splashes.partials.actions.sidebar')
 					@include('dashboard.sliders.partials.actions.sidebar')
-					@include('dashboard.pages.partials.actions.sidebar')
 					@include('dashboard.settings.partials.actions.sidebar')
 				</ul>
 			</div>

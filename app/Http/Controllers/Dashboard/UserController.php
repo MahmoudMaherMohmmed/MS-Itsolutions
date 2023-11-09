@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Dashboard;
 
+use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Http\Requests\Dashboard\StoreUserRequest;
 use App\Http\Requests\Dashboard\UpdateUserRequest;

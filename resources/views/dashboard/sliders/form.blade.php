@@ -37,17 +37,6 @@
 
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label class="form-label">{{ __('sliders.attributes.application') }} <span class="tx-danger">*</span></label>
-                                    <select class="form-control select2-no-search" name="application" require="">
-                                        @foreach(App\Enums\SliderApplicationEnum::options() as $key=>$value)
-                                            <option value="{{$key}}" {{$slider!=null && $slider->application->value==$key ? 'selected' : ''}}> {{ $value }} </option>
-                                        @endforeach
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <div class="form-group">
                                     <label class="form-label">{{ __('sliders.attributes.title') }} <span class="tx-danger">*</span></label>
                                     <div class="example">
 										<div class="panel panel-primary tabs-style-1">
@@ -77,7 +66,7 @@
 
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label class="form-label">{{ __('sliders.attributes.description') }}</label>
+                                    <label class="form-label">{{ __('sliders.attributes.description') }} <span class="tx-danger">*</span></label>
                                     <div class="example">
 										<div class="panel panel-primary tabs-style-1">
                                             <div class=" tab-menu-heading">
