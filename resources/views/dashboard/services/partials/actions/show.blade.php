@@ -1,0 +1,1 @@
+<a href="{{ route('services.show', $service) }}" class="btn btn-sm btn-primary"> <i class="las la-eye"></i> </a> 

@@ -28,6 +28,7 @@
 					@include('dashboard.users.partials.actions.sidebar')
 
 					<li class="side-item side-item-category">{{ __('dashboard.application') }}</li>
+					@include('dashboard.services.partials.actions.sidebar')
 					@include('dashboard.sliders.partials.actions.sidebar')
 					@include('dashboard.blogs.partials.actions.sidebar')
 					@include('dashboard.partners.partials.actions.sidebar')

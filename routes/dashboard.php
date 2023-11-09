@@ -17,6 +17,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
     Route::get('/home', [App\Http\Controllers\Dashboard\HomeController::class, 'home'])->name('home');
     Route::resource('users', App\Http\Controllers\Dashboard\UserController::class);
 
+    Route::resource('services', App\Http\Controllers\Dashboard\ServiceController::class);
     Route::resource('sliders', App\Http\Controllers\Dashboard\SliderController::class);
     Route::resource('blogs', App\Http\Controllers\Dashboard\BlogController::class);
     Route::resource('partners', App\Http\Controllers\Dashboard\PartnerController::class);
