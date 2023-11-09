@@ -2,20 +2,21 @@
 
 namespace App\Models;
 
-use App\Enums\SliderStatusEnum;
+use App\Enums\BlogStatusEnum;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\Translatable\HasTranslations;
 
-class Slider extends Model implements HasMedia
+class Blog extends Model implements HasMedia
 {
     use HasFactory;
     use InteractsWithMedia;
     use HasTranslations;
 
     protected $fillable = [
+        'slug',
         'title',
         'description',
         'status',
@@ -29,11 +30,11 @@ class Slider extends Model implements HasMedia
      * @var array<string, string>
      */
     protected $casts = [
-        'status' => SliderStatusEnum::class,
+        'status' => BlogStatusEnum::class,
     ];
 
-    public const MEDIA_COLLECTION_NAME = 'slider_image';
-    public const MEDIA_COLLECTION_URL = 'dashboard/images/slider.png';
+    public const MEDIA_COLLECTION_NAME = 'blog_image';
+    public const MEDIA_COLLECTION_URL = 'dashboard/images/blog.png';
 
     public function registerMediaCollections(): void
     {
@@ -49,6 +50,6 @@ class Slider extends Model implements HasMedia
 
     public function scopeActive($query)
     {
-        return $query->where('status', SliderStatusEnum::ACTIVE);
+        return $query->where('status', BlogStatusEnum::ACTIVE);
     }
 }

@@ -1,26 +1,26 @@
 <?php
 
 return [
-    'plural' => 'Sliders',
-    'singular' => 'Slider',
-    'empty' => 'There are no sliders',
-    'select' => 'Select slider',
+    'plural' => 'Blogs',
+    'singular' => 'Blog',
+    'empty' => 'There are no blogs',
+    'select' => 'Select blog',
     'perPage' => 'Count Results Per Page',
     'actions' => [
         'plural' => 'Actions',
-        'list' => 'List sliders',
-        'show' => 'Show slider',
-        'create' => 'Create new slider',
+        'list' => 'List blogs',
+        'show' => 'Show blog',
+        'create' => 'Create new blog',
         'new' => 'New',
-        'edit' => 'Edit slider',
-        'delete' => 'Delete slider',
+        'edit' => 'Edit blog',
+        'delete' => 'Delete blog',
         'save' => 'Save',
         'filter' => 'Filter',
     ],
     'messages' => [
-        'created' => 'The slider has been created successfully.',
-        'updated' => 'The slider has been updated successfully.',
-        'deleted' => 'The slider has been deleted successfully.',
+        'created' => 'The blog has been created successfully.',
+        'updated' => 'The blog has been updated successfully.',
+        'deleted' => 'The blog has been deleted successfully.',
         'retrieved' => 'Data has been retrieved successfully.',
     ],
     'attributes' => [
@@ -34,7 +34,7 @@ return [
     'dialogs' => [
         'delete' => [
             'title' => 'Warning !',
-            'info' => 'Are you sure you want to delete the slider ?',
+            'info' => 'Are you sure you want to delete the blog ?',
             'confirm' => 'Delete',
             'cancel' => 'Cancel',
         ]
