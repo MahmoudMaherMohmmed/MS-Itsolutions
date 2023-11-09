@@ -30,6 +30,7 @@
 					<li class="side-item side-item-category">{{ __('dashboard.application') }}</li>
 					@include('dashboard.sliders.partials.actions.sidebar')
 					@include('dashboard.blogs.partials.actions.sidebar')
+					@include('dashboard.partners.partials.actions.sidebar')
 					@include('dashboard.settings.partials.actions.sidebar')
 				</ul>
 			</div>
