@@ -20,5 +20,5 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
         'verify' => false, // Email Verification Routes...
     ]);
 
-    Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+    Route::get('/', [App\Http\Controllers\Front\HomeController::class, 'index']);
 });
